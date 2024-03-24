@@ -30,7 +30,7 @@
 			<flag hasinfinitemana="0" />
 			<flag hasinfinitesoul="0" />
 			<flag hasnoexhaustion="1" />
-			<flag cannotusespells="1" />
+			<flag cannotusespells="0" />
 			<flag cannotpickupitem="1" />
 			<flag canalwayslogin="1" />
 			<flag canbroadcast="1" />

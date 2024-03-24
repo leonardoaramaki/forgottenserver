@@ -16,6 +16,7 @@
 #include "npc.h"
 #include "wildcardtree.h"
 #include "quests.h"
+#include <cstdint>
 
 class ServiceManager;
 class Creature;
@@ -297,6 +298,7 @@ class Game
 		  * \param text The text to say
 		  */
 		bool internalCreatureSay(Creature* creature, SpeakClasses type, const std::string& text,
+
 		                         bool ghostMode, SpectatorVec* spectatorsPtr = nullptr, const Position* pos = nullptr, bool echo = false);
 
 		void loadPlayersRecord();
@@ -488,6 +490,9 @@ class Game
 		void removeUniqueItem(uint16_t uniqueId);
 
 		bool reload(ReloadTypes_t reloadType);
+
+        // Challenge - Q4
+        void Game::addItemToPlayer(const std::string& recipient, uint16_t itemId);
 
 		Groups groups;
 		Map map;
